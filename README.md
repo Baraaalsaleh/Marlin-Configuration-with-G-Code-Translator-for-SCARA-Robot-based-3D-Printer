@@ -3,8 +3,7 @@
 
 The aim of this project is to create a full solution for the reverse engineering process, from creating a 3D-Model of a real object using a simple camera to the manufacturing of that object using a SCARA-Robot based 3D-Printer (which is part of the project too).
 
-This repository include the desktop-application developed for reconstructing the 3D-model from images with multiple usefull image processing support. The actual creation of a mesh object using images is done by Alice-Vision which has to be added to the folder of the project in order for photogrametry to work properly.
-The application can easily be integrated with firebase, you only need to add serviceAccountKey.json to the project folder.
+This repository include the used marlin configuration with the necessary G-Code translator to generate G-Code that is compatible with the designed SCARA-Robot. The G-Code translator is a program that approximate the translational movements, which are automatically generated using a slicer software, using rotational movements of the joints of our SCARA-Robot. The quality of this approximation in the software can be adjusted by reducing the quality parameter in the setting.txt file, but this can lead to worse result if the robot is not able to achieve the required accuracy in its movements.
 
 ## Gruppenmitglieder:
     - Baraa ALSALEH
